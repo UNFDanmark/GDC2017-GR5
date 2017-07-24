@@ -24,7 +24,6 @@ GameObject:
   - 23: {fileID: 23000012183875498}
   - 114: {fileID: 114000010804881066}
   - 54: {fileID: 54000011346232200}
-  - 114: {fileID: 114000011100568870}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -107,22 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3bd39524c6c9394bb5c8792a92a3dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialVelocity: {x: 45, y: 10}
-  myRigidbody: {fileID: 0}
-  lifeTime: 10
---- !u!114 &114000011100568870
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011397169924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3bd39524c6c9394bb5c8792a92a3dd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialVelocity: {x: 0, y: 0}
-  myRigidbody: {fileID: 0}
+  initialVelocity: {x: 45, y: 5}
+  myRigidbody: {fileID: 54000011346232200}
   lifeTime: 10
 --- !u!135 &135000012701281150
 SphereCollider:
@@ -131,7 +116,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011397169924}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
