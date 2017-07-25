@@ -10,11 +10,13 @@ public class BulletScript : MonoBehaviour {
     public float lifeTime = 10;
     void Awake()
     {
+        // Rigidbody
         myRigidbody = GetComponent<Rigidbody>();
     }
 
     // Use this for initialization
     void Start () {
+        // Movement
     myRigidbody.velocity = transform.forward * initialVelocity.x + transform.up * initialVelocity.y;
         Destroy(gameObject, lifeTime);
     }
@@ -23,6 +25,7 @@ public class BulletScript : MonoBehaviour {
 	void Update () {
 	
 	}
+    // Destroy / kill
    void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Enemy")

@@ -12,27 +12,28 @@ public class PlayerScript : MonoBehaviour {
     // Use this for initialization
     void Awake()
     {
-        //rigidbody
+        // rigidbody
         myRigidbody = GetComponent <Rigidbody>();
     }
 
     void Start () {
+        // Cursor
         Cursor.visible = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        //Look around
+        // Look around
         transform.Rotate(0, rotationspeed * Time.deltaTime * Input.GetAxis("Mouse X"), 0, Space.World);
         transform.Rotate(rotationspeed * Time.deltaTime * Input.GetAxis("Mouse Y"), 0, 0);
 
-        //Shoot Magic
+        // Command
         if (Input.GetMouseButtonDown(0) && (Time.time - timeOfLastShot) >= reloadTime)
         {
             Shoot();
         }
 	}
-    //Shoot
+    // Shoot
     public void Shoot()
     {
         timeOfLastShot = Time.time;
