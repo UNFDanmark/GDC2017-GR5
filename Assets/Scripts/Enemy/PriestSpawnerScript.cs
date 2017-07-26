@@ -4,7 +4,10 @@ using System.Collections;
 public class PriestSpawnerScript : MonoBehaviour {
     public float spawnDelay = 10f;
     public float timer = 0;
-    public GameObject Priest;
+    public TargetScript Priest;
+    public GameObject Crystal;
+    public float negSpawnDelay = 0.1f;
+
     // Use this for initialization
     void Start () {
 	
@@ -16,6 +19,7 @@ public class PriestSpawnerScript : MonoBehaviour {
         {
             spawn();
             timer = 0;
+            spawnDelay = spawnDelay - negSpawnDelay;
         }
         else
         {
@@ -24,7 +28,8 @@ public class PriestSpawnerScript : MonoBehaviour {
 	}
     public void spawn()
     {
-        GameObject newPriest = Instantiate(Priest);
+        TargetScript newPriest = Instantiate(Priest);
         newPriest.transform.position = transform.position;
+        newPriest.Crystal = Crystal;
     }
 }

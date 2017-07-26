@@ -8,6 +8,7 @@ public class TargetScript : MonoBehaviour {
 
     public NavMeshAgent navAgent;
     public GameObject Crystal;
+    public float CurHP = 100;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,15 @@ public class TargetScript : MonoBehaviour {
         if(other.tag == "Crystal")
         {
             SceneManager.LoadScene("Lost");
+        }
+    }
+
+    public void TakeDamage(float damage) {
+        CurHP = CurHP - damage;
+        print(CurHP);
+        if(CurHP <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }

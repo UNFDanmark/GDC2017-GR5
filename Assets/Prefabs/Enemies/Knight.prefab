@@ -9,47 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000011139503126}
+  m_RootGameObject: {fileID: 1000012781991314}
   m_IsPrefabParent: 1
---- !u!1 &1000011139503126
+--- !u!1 &1000012781991314
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000012219040990}
-  - 33: {fileID: 33000010982010086}
-  - 136: {fileID: 136000012063057988}
-  - 23: {fileID: 23000013076484484}
-  - 195: {fileID: 195000010137236434}
-  - 114: {fileID: 114000010797747386}
+  - 4: {fileID: 4000011209233442}
+  - 33: {fileID: 33000012733697500}
+  - 136: {fileID: 136000011745569970}
+  - 23: {fileID: 23000011896216978}
+  - 114: {fileID: 114000011479302278}
+  - 195: {fileID: 195000011161893266}
   m_Layer: 0
-  m_Name: Priest
+  m_Name: Knight
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000012219040990
+--- !u!4 &4000011209233442
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011139503126}
+  m_GameObject: {fileID: 1000012781991314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.119623, y: 1.0000015, z: 13.424029}
+  m_LocalPosition: {x: -23.69, y: 1.03, z: 11.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &23000013076484484
+--- !u!23 &23000011896216978
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011139503126}
+  m_GameObject: {fileID: 1000012781991314}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 5802bf18ef5c1f7448d17f40f2a4dab7, type: 2}
+  - {fileID: 2100000, guid: f649fb217337dd34abb039d2f029c0cf, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -73,33 +73,33 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33000010982010086
+--- !u!33 &33000012733697500
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011139503126}
+  m_GameObject: {fileID: 1000012781991314}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114000010797747386
+--- !u!114 &114000011479302278
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011139503126}
+  m_GameObject: {fileID: 1000012781991314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5de8de5282028be4cac35e0aac3729f5, type: 3}
+  m_Script: {fileID: 11500000, guid: caf87261859f3324ea20e4b284164c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   navAgent: {fileID: 0}
   Crystal: {fileID: 1000013812228414, guid: d6f9f2c40acd1cf4a984c9d48a6f2cde, type: 2}
-  CurHP: 100
---- !u!136 &136000012063057988
+  CurHP: 300
+--- !u!136 &136000011745569970
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011139503126}
+  m_GameObject: {fileID: 1000012781991314}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -107,12 +107,12 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!195 &195000010137236434
+--- !u!195 &195000011161893266
 NavMeshAgent:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011139503126}
+  m_GameObject: {fileID: 1000012781991314}
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Speed: 3.5

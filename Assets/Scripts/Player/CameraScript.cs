@@ -40,7 +40,7 @@ public class CameraScript : MonoBehaviour {
         {
             transform.position = new Vector3(towerX3, towerY, towerZ3);
             print("test 3.3");
-
+        
             placement = 0;
         }
         else

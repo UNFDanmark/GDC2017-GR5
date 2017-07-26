@@ -7,7 +7,8 @@ public class PlayerScript : MonoBehaviour {
     public float rotationspeed = 20f;
     public float timeOfLastShot = 0;
     public float reloadTime = 2;
-    public GameObject Bullet;
+    //public GameObject Bullet;
+    public KeyCode testButton = KeyCode.T;
 
     // Use this for initialization
     void Awake()
@@ -28,18 +29,19 @@ public class PlayerScript : MonoBehaviour {
         transform.Rotate(rotationspeed * Time.deltaTime * Input.GetAxis("Mouse Y"), 0, 0);
 
         // Command
-        if (Input.GetMouseButtonDown(0) && (Time.time - timeOfLastShot) >= reloadTime)
-        {
-            Shoot();
-        }
+        //if (Input.GetMouseButtonDown(0) && (Time.time - timeOfLastShot) >= reloadTime)
+       // if (Input.GetKeyDown(testButton) && (Time.time - timeOfLastShot) >= reloadTime)
+       // {
+            //Shoot();
+        //}
 	}
     // Shoot
-    public void Shoot()
-    {
-        timeOfLastShot = Time.time;
-        GameObject newBullet = Instantiate(Bullet);
+    //public void Shoot()
+   // {
+       // timeOfLastShot = Time.time;
+       // GameObject newBullet = Instantiate(Bullet);
 
-        newBullet.transform.position = transform.position;
-        newBullet.transform.rotation = transform.rotation;
-    }
+       // newBullet.transform.position = transform.position;
+       // newBullet.transform.rotation = transform.rotation;
+   // }
 }
