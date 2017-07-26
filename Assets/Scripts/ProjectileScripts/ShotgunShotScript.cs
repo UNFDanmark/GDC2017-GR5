@@ -41,7 +41,7 @@ public class ShotgunShotScript : MonoBehaviour {
     {
         if (other.tag == "Enemy")
         {
-            other.GetComponent<Taget2>().TakeDamage(damage);
+            other.GetComponent<TargetScript>().TakeDamage(damage);
             //Destroy(other.gameObject);
         }
     }
