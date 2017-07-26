@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 66ce3657b1e426244aecf391b4356b50
-timeCreated: 1501016227
+guid: 9104826fbd9f2394a99dbc579195dd59
+timeCreated: 1501052952
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Sten
+    4300000: Box001
   materials:
     importMaterials: 1
     materialName: 0

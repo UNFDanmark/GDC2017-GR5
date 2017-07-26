@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 66ce3657b1e426244aecf391b4356b50
-timeCreated: 1501016227
+guid: 4ee16eb3a1174b54fa2ec9032fd82297
+timeCreated: 1501017862
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Sten
+    4300000: Cone001
   materials:
     importMaterials: 1
     materialName: 0
