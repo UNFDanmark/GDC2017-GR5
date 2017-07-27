@@ -191,10 +191,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad9d2ecedb944f458437577cbee7ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialVelocity: {x: 20, y: 5}
+  initialVelocity: {x: 70, y: 5}
   myRigidbody: {fileID: 54000012812546428}
   lifeTime: 10
-  damage: 5
+  damage: 14.375
 --- !u!135 &135000010062267740
 SphereCollider:
   m_ObjectHideFlags: 1
