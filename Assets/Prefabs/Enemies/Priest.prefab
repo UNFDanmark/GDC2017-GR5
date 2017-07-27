@@ -24,6 +24,7 @@ GameObject:
   - 23: {fileID: 23000013076484484}
   - 195: {fileID: 195000010137236434}
   - 114: {fileID: 114000010797747386}
+  - 82: {fileID: 82000010312950236}
   m_Layer: 0
   m_Name: Priest
   m_TagString: Enemy
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011139503126}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 8.866973, y: 1.0000055, z: 44.749985}
+  m_LocalPosition: {x: 256.7, y: 0.76, z: -54.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
@@ -68,10 +69,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012858479150}
-  m_LocalRotation: {x: 0, y: 0.7073536, z: 0.7068599, w: 0}
-  m_LocalPosition: {x: -0, y: -0.995, z: 0}
+  m_LocalRotation: {x: 0.010990157, y: 0.7072683, z: 0.70677453, w: -0.010982612}
+  m_LocalPosition: {x: -0.14370728, y: -0.66, z: -0.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: -89.96, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.05399, y: 180, z: 1.7279968}
   m_Children: []
   m_Father: {fileID: 4000012219040990}
   m_RootOrder: 0
@@ -147,6 +148,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012858479150}
   m_Mesh: {fileID: 4300000, guid: 7e1d66e9fbcbca8439786e3bc8adbd76, type: 3}
+--- !u!82 &82000010312950236
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011139503126}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a73a5ba42e45aa74ea82de2096f95953, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114000010797747386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -159,8 +234,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navAgent: {fileID: 0}
-  Crystal: {fileID: 1000013812228414, guid: d6f9f2c40acd1cf4a984c9d48a6f2cde, type: 2}
+  Crystal: {fileID: 0}
   CurHP: 100
+  rend: {fileID: 23000013577187956}
+  redDuration: 0.2
+  DeathAudio: {fileID: 82000010312950236}
 --- !u!136 &136000012063057988
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -182,7 +260,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1000011139503126}
   m_Enabled: 1
   m_Radius: 0.5000001
-  m_Speed: 2
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -191,6 +269,6 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 1
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
