@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a4798d8203720de4888c5aa36f76c3ff
-timeCreated: 1501099470
+guid: 0c5c34f54b54596439999e91c520fad3
+timeCreated: 1501102733
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,8 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: "H\xE5ndflade"
-    9500000: //RootNode
+    4300000: Cylinder001
   materials:
     importMaterials: 1
     materialName: 0
@@ -69,7 +68,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
