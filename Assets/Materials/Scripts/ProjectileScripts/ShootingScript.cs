@@ -13,7 +13,7 @@ public class ShootingScript : MonoBehaviour {
     public GameObject Ice;
     public CameraScript place;
     public GameObject Stone;
-    int BulletCount = 10;
+    int BulletCount = 50;
 
     // Use this for initialization
     void Start () {

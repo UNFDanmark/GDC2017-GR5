@@ -5,7 +5,7 @@ public class CrystalScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	print("Test");
+	    print("Test");
 	}
 	
 	// Update is called once per frame

@@ -8,6 +8,7 @@ public class KnightSpawner : MonoBehaviour {
     public TargetScript Knight;
     public GameObject Crystal;
     public float negSpawnDelay = 0.1f;
+    public float MaxSpawn;
     //public AnimationCurve lol;
     // Use this for initialization
     void Start()
@@ -18,7 +19,7 @@ public class KnightSpawner : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (timer >= spawnDelay)
+        if (timer >= spawnDelay && timer >= MaxSpawn)
         {
             spawn();
             timer = 0;

@@ -109,7 +109,7 @@ MonoBehaviour:
   initialVelocity: {x: 45, y: 0}
   myRigidbody: {fileID: 54000011346232200}
   lifeTime: 10
-  damage: 125
+  damage: 300
 --- !u!135 &135000012701281150
 SphereCollider:
   m_ObjectHideFlags: 1

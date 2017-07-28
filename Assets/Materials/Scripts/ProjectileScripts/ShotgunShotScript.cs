@@ -22,8 +22,8 @@ public class ShotgunShotScript : MonoBehaviour {
     {
         // Movement
         Vector3 myRotation = transform.rotation.eulerAngles;
-        myRotation.x += Random.Range(-2f, 2f);
-        myRotation.y += Random.Range(-2f, 2f);
+        myRotation.x += Random.Range(-8f, 8f);
+        myRotation.y += Random.Range(-10f, 10f);
         transform.rotation = Quaternion.Euler(myRotation);
       //  print(myRotation);
 

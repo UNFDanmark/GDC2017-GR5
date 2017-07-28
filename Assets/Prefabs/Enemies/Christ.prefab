@@ -57,7 +57,7 @@ Transform:
   m_GameObject: {fileID: 1000011876772602}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -2, z: 0}
-  m_LocalScale: {x: 0.5640574, y: 1, z: 1.2613945}
+  m_LocalScale: {x: 0.84, y: 1.5, z: 1.89}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000013042171034}
@@ -70,7 +70,7 @@ Transform:
   m_GameObject: {fileID: 1000011229810138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 256.7, y: 0.6, z: -54.6}
-  m_LocalScale: {x: 1.7728692, y: 0.7927738, z: 1}
+  m_LocalScale: {x: 2.655, y: 1.2, z: 1.5}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000010168064856}
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navAgent: {fileID: 0}
   Crystal: {fileID: 0}
-  CurHP: 400
+  CurHP: 700
   rend: {fileID: 23000011569547654}
   redDuration: 0.2
   DeathAudio: {fileID: 82000011680707106}

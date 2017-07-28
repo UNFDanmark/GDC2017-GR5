@@ -22,7 +22,7 @@ GameObject:
   - 33: {fileID: 33000010127012226}
   - 65: {fileID: 65000013005456064}
   - 23: {fileID: 23000012589490188}
-  - 114: {fileID: 114000013375335788}
+  - 114: {fileID: 114000011928140414}
   m_Layer: 0
   m_Name: Knight Spawner
   m_TagString: Untagged
@@ -91,7 +91,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114000013375335788
+--- !u!114 &114000011928140414
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -99,11 +99,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011197393526}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e0b5f49ac0854d498433ea9a948f96b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8509b37448c634c41bb7cbdc9c76670b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 10
   timer: 0
-  Knight: {fileID: 114000013371674498, guid: 920fc856f67783948a0e072e612d88cf, type: 2}
+  Priest: {fileID: 114000013371674498, guid: 920fc856f67783948a0e072e612d88cf, type: 2}
   Crystal: {fileID: 0}
-  negSpawnDelay: 0.95
+  negSpawnDelay: 0
+  MaxSpawntime: 1
+  SpawnCount: 0
+  x: 0.1
+  y: 1
+  z: 2

@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8509b37448c634c41bb7cbdc9c76670b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDelay: 5
-  timer: 0
+  spawnDelay: 15
+  timer: 10
   Priest: {fileID: 114000010797747386, guid: aa85a6c2730563b43b39dd10c7271a03, type: 2}
   Crystal: {fileID: 0}
   negSpawnDelay: 0.95
